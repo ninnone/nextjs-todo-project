@@ -27,7 +27,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        {/* this is the child of the layout --- the only child of the layout you should know for now is the page component found in the page.tsx file */}
+        {children} 
       </body>
     </html>
   );
