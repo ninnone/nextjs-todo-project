@@ -19,6 +19,60 @@
   }
 }
 
+@layer base {
+  html {
+    font-size: 14px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.2;
+  }
+  h1 {
+    font-size: 3.785rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 3.071rem;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 2.438rem;
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 1.928rem;
+    font-weight: 600;
+  }
+  h5 {
+    font-size: 1.571rem;
+    font-weight: 500;
+  }
+  h6 {
+    font-size: 1.285rem;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1rem;
+    /* font-weight: bold; */
+  }
+  caption {
+    font-size: 0.785rem;
+    /* font-weight: bold; */
+    text-align: start;
+    @apply tracking-widest;
+  }
+  small {
+    font-size: 0.642rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    @apply tracking-widest;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
