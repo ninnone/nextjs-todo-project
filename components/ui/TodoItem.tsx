@@ -9,7 +9,7 @@ import ButtonCustom from "./ButtonCustom";
 const TodoItem = (values: Todo) => {
   const { removeFromList } = useStore();
   return (
-    <div className="flex w-full gap-2 border p-4 rounded-2xl hover:bg-gray-400">
+    <div className="flex w-full gap-2 border bg-white border-gray-200 p-4 rounded-2xl hover:bg-gray-400">
       <div className="p-2 flex flex-col w-full">
         <h6>{values.taskName}</h6>
         <p className="line-clamp-4 text-gray-600">{values.taskDescription}</p>
