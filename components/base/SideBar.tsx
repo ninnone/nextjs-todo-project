@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Clipboard, Gear, UserCircle } from "phosphor-react";
+import { Clipboard, Gear } from "phosphor-react";
 import FootBar from "./FootBar";
 
 const SideBar = () => {

@@ -1,8 +1,8 @@
 "use client";
-import { Todo } from "@/types/types";
-import { PencilSimpleLine, Trash } from "phosphor-react";
-import ButtonCustom from "./ButtonCustom";
 import useStore from "@/context/store";
+import { Todo } from "@/types/types";
+import { Trash } from "phosphor-react";
+import ButtonCustom from "./ButtonCustom";
 
 // interface todoItemParameter can also be called todoItemProps which is more commonly used
 

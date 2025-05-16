@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { Bell, MagnifyingGlass } from "phosphor-react";
 
 const Navbar = () => {
