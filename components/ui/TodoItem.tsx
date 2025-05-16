@@ -8,7 +8,6 @@ import useStore from "@/context/store";
 
 const TodoItem = (values: Todo) => {
   const { removeFromList } = useStore();
-  console.log(values);
   return (
     <div className="flex w-full gap-2 border p-4 rounded-2xl hover:bg-gray-400">
       <div className="p-2 flex flex-col w-full">
