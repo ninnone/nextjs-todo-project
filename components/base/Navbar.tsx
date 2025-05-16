@@ -14,6 +14,7 @@ const Navbar = () => {
             <Link href={`/${item}`} key={key}>
               <li>{item}</li>
             </Link>
+            hello
           ))} */}
           <li>
             <div className="flex p-2 items-center justify-center outline outline-black/20 rounded-xl">
