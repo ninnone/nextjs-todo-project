@@ -5,10 +5,9 @@ interface ButtonParametersType {
   linkto?: string;
   title: string;
   icon?: React.ReactNode;
-  color?: "gray" | "red";
 }
 
-const ButtonCustom = ({ linkto, title, icon, color }: ButtonParametersType) => {
+const ButtonCustom = ({ linkto, title, icon }: ButtonParametersType) => {
   return (
     <>
       {linkto ? (
