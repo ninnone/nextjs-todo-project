@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/base/Navbar";
 import FootBar from "@/components/base/FootBar";
+import SideBar from "@/components/base/SideBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -26,13 +24,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar />
-        {/* this is the child of the layout --- the only child of the layout you should know for now is the page component found in the page.tsx file */}
-        {children}
-        <FootBar />
+      <body className={`${poppins.variable} flex`}>
+        <SideBar />
+        <div className="w-full">
+          <Navbar />
+          {/* this is the child of the layout --- the only child of the layout you should know for now is the page component found in the page.tsx file */}
+          <div className="bg-[var(--primary)] rounded-4xl p-6 m-4">
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
